@@ -39,7 +39,7 @@ text-align: left;
 width: auto;
 }}
 @media screen and (min-width: 860px){
-#about {background: url("css/img/logo-full.png") no-repeat 0 94px;padding-top: 94px;
+#about {padding-top: 94px;
 }}
 @media screen and (min-width: 860px){
 #about .nav {margin-top: 70px;margin-bottom: 0;
@@ -86,20 +86,20 @@ h1 i{color: #484640;display: block;
 }
 .portfolio li{clear: both;position: relative;margin-bottom: 6em;
 }
-p.pic{border-bottom: 1px solid #f6f6f6; position: relative;
+p .pic{border-bottom: 1px solid #f6f6f6; position: relative;
+}
+p .pic i{display: block;overflow:hidden;
+}
+p .pic img {display: block;margin: 0 auto;max-width:none;
 }
 @media screen and (max-device-width: 480px), screen and (max-width: 600px){
-p.pic i	{
+p .pic i{
 height: 120px;
 }}
-p.pic i{display: block;overflow:hidden;
-}
 @media screen and (max-device-width: 480px), screen and (max-width: 600px){
-p.pic img {
+p .pic img {
 margin-top: -50px;
 }}
-p.pic img {display: block;margin: 0 auto;max-width: none;
-}
 .portfolio h2, .portfolio h3 {font: bold 1em Helvetica, Arial, sans-serif;text-transform: uppercase;
 }
 .portfolio h2 {background: #070908;background: rgba(0, 0, 0, 0.74);color: #DEDEDE;float: left;position: absolute;top: -1.5em;margin-left: 1.5em;
