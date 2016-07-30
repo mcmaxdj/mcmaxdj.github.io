@@ -1,5 +1,5 @@
 <?
-if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST['phone']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
+if((isset($_POST['nizzame'])&&$_POST['nizzame']!="")&&(isset($_POST['emizzail'])&&$_POST['emizzail']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
         $to = 'mcmaxdj@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'С сайта портфолио'; //Загаловок сообщения
         $message = '
@@ -8,8 +8,8 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST[
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>e-mail: '.$_POST['e-mail'].'</p>                        
+                        <p>Имя: '.$_POST['nizzame'].'</p>
+                        <p>e-mail: '.$_POST['emizzail'].'</p>                        
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
